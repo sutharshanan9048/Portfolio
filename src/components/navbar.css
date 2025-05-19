@@ -1,0 +1,298 @@
+/* .nav{
+    display: grid;
+
+}
+.navbar{
+    margin-top: 10px;
+}
+.navbar h1{
+    color: rgb(203, 57, 57);
+    display:inline;
+    margin-left: 100px;
+    font-weight: 900;
+    font-size: 35px;
+}
+ol,li,nav{
+    display: inline;
+
+}
+.link{
+    font-weight: 900;
+    background-color: #ACC8E5;
+    color:#112A46;
+}
+ol{
+    margin-left: 30%;
+}
+li{
+    margin-left: 80px;
+}
+.link:hover{
+    color: white;
+} */
+/* Navbar Base Styles */
+
+.nav {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #112A46;
+    position: sticky;
+    z-index: 100;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .navbar h1 {
+color: blue;
+    font-weight: 900;
+    font-size: 35px;
+    margin-left: 50px   ;
+  }
+  
+  nav ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .link {
+    font-weight: 900;
+    background-color: #ACC8E5;
+    color: #112A46;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .link:hover {
+    color: white;
+    background-color: rgb(28, 38, 221);
+    border-radius: 10px;
+  }
+  
+  /* Mobile Menu Button (Hidden by default) */
+  .menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 1024px) {
+    ol {
+      margin-left: 15%;
+    }
+    li {
+      margin-left: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: inline-block;
+    }
+    
+    nav ol {
+      position: fixed;
+      top: 70px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 70px);
+      background-color: #112A46;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      transition: all 0.5s ease;
+    }
+    
+    nav ol.active {
+      left: 0;
+    }
+    
+    .link {
+      padding: 12px 25px;
+      font-size: 18px;
+    }
+    
+    .navbar h1 {
+      font-size: 28px;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar h1 {
+      font-size: 24px;
+    }
+    
+    .link {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+
+/* NAV RESSPONSIVE */
+
+
+/* ABOUT PAGE STYLE  */
+.about{
+    display: flex;
+   margin-left: 150px;
+   margin-top: 100Px;
+   color: #112A46;
+}
+.about-1 img{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+}
+.about-2{
+    margin-left: 120px;
+    margin-top: 55px;
+}
+.about-2 h1{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.about-2 span{
+    color:aquamarine ;
+}
+.about-2 h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.about-2 p{
+    margin-top: 50px;
+    text-align: justify;
+    width: 600px;
+    font-weight: 900;
+}
+
+/* MEDIA QUERY */
+
+/* Media Queries for About Page */
+@media (max-width: 1200px) {
+    .about {
+      margin-left: 100px;
+    }
+    
+    .about-2 {
+      margin-left: 80px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about {
+      margin-left: 50px;
+      margin-top: 80px;
+    }
+    
+    .about-1 img {
+      width: 280px;
+      height: 320px;
+    }
+    
+    .about-2 {
+      margin-left: 60px;
+    }
+    
+    .about-2 p {
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      padding: 0 20px;
+      margin-top: 60px;
+    }
+    
+    .about-1 img {
+      width: 250px;
+      height: 300px;
+    }
+    
+    .about-2 {
+      margin-left: 0;
+      margin-top: 40px;
+      text-align: center;
+    }
+    
+    .about-2 p {
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+      text-align: justify;
+
+    }
+    
+    .about-2 h1 {
+      font-size: 32px;
+    }
+    
+    .about-2 h3 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about {
+      margin-top: 40px;
+    }
+    
+    .about-1 img {
+      width: 220px;
+      height: 270px;
+    }
+    
+    .about-2 h1 {
+      font-size: 28px;
+    }
+    
+    .about-2 h3 {
+      font-size: 20px;
+    }
+    
+    .about-2 p {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 20px;
+      text-align: justify;
+
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .about-1 img {
+      width: 200px;
+      height: 250px;
+    }
+    
+    .about-2 h1 {
+      font-size: 24px;
+    }
+    
+    .about-2 h3 {
+      font-size: 18px;
+    }
+    
+    .about-2 p {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
