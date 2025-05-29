@@ -1,11 +1,12 @@
 import React from 'react'
 import './navbar.css'
+import insta from '../images/insta.jpg';
 const AboutPage = () => {
   return (
     <>
     <div className='about'>
       <div className='about-1'>
-      <img src="./images/insta.jpg" alt="" />
+      <img src={insta} alt="img" />
       </div>
       <div className='about-2'>
          <h1>About <span>Me</span></h1>

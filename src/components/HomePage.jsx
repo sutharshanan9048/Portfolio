@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
-
+import formal from '../images/formal.jpg';
 
 const HomePage = () => {
   return (
@@ -18,7 +18,7 @@ const HomePage = () => {
         </div>
       
       <div className='image'>
-        <img src="./images/formal.jpg" alt="" />
+        <img src={formal} alt="Formal" />
       </div>
       </div>
       <div className='logo'>
