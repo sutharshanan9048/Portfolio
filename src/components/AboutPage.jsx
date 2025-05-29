@@ -5,7 +5,7 @@ const AboutPage = () => {
     <>
     <div className='about'>
       <div className='about-1'>
-      <img src="src/images/insta.jpg" alt="" />
+      <img src="./images/insta.jpg" alt="" />
       </div>
       <div className='about-2'>
          <h1>About <span>Me</span></h1>

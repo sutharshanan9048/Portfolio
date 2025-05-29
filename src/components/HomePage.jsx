@@ -18,7 +18,7 @@ const HomePage = () => {
         </div>
       
       <div className='image'>
-        <img src="src/images/formal.jpg" alt="" />
+        <img src="./images/formal.jpg" alt="" />
       </div>
       </div>
       <div className='logo'>
