@@ -5,7 +5,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import formal from '../images/formal.jpg';
-
+import res from '../Resume/sutharsan.pdf';
 const HomePage = () => {
   return (
     <>
@@ -27,7 +27,7 @@ const HomePage = () => {
           <FaFacebook className='logo1'/>
           <IoLogoGithub className='logo1'/>
       </div>
-        <button><a href="./Resume/sutharsan.pdf" download="Sutharsan Resume" >CV download</a></button>
+        <button><a href={res} download >CV download</a></button>
    
     </>
 
